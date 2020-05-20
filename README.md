@@ -30,7 +30,7 @@ SteVe requires
 * Maven 
 * At least MySQL 5.7.7 (MariaDB 10.2.1 or later works as well) as database (**Note: MySQL 8.x is not supported yet**)
 
-To build and run. 
+ build and run. 
 
 SteVe is designed to run standalone, a java servlet container / web server (e.g. Apache Tomcat), is **not** required.
 
