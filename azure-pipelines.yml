@@ -1,0 +1,21 @@
+
+trigger:
+- master
+
+pool:
+  name: Azure Pipelines
+  demands: maven
+
+steps:
+- task: Maven@4
+  inputs:
+    azureSubscription: 'Pay-As-You-Go(43a07b26-bd3a-4c98-b4f9-ab95da9792f9)'
+    mavenPomFile: 'pom.xml'
+    options: '-Dlicense.skip=true'
+    publishJUnitResults: true
+    testResultsFiles: '**/surefire-reports/TEST-*.xml'
+    javaHomeOption: 'JDKVersion'
+    mavenVersionOption: 'Default'
+    mavenAuthenticateFeed: false
+    effectivePomSkip: false
+    sonarQubeRunAnalysis: false   
