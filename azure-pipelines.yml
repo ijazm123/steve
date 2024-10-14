@@ -5,7 +5,7 @@ trigger:
 pool:
   name: Azure Pipelines
   demands:
-  - java17
+  - jdk17
   - maven
 
 steps:
