@@ -4,7 +4,9 @@ trigger:
 
 pool:
   name: Azure Pipelines
-  demands: maven
+  demands:
+  - java17
+  - maven
 
 steps:
 - task: Maven@4
